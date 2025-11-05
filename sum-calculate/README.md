@@ -1,16 +1,45 @@
-# React + Vite
+Sum Calculator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple React application that calculates the sum of two numbers provided by the user. It demonstrates the use of functional components, the useState hook, and CSS Modules for styling.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Two input fields for numbers.
 
-## React Compiler
+A button to trigger the calculation.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Displays the sum of the two numbers.
 
-## Expanding the ESLint configuration
+Provides validation for empty or non-numeric inputs.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Project Structure
+
+The project is structured using CSS Modules, with components separated into their own directories.
+
+sum-calculate/  
+├── src/  
+│   ├── components/  
+│   │   └──SumCalculator/  
+│   │               └──── SumCalculator.jsx  
+│   │               └──── SumCalculator.module.css  
+│   ├── App.jsx  
+│   ├── index.js  
+│   └── App.css  
+├── package.json  
+└── README.md  
+ 
+
+Available Scripts
+
+In the project directory, you can run:
+
+npm install
+
+Installs all the dependencies required for the project.
+
+npm start
+
+Runs the app in development mode.
+Open http://localhost:3000 to view it in your browser.
+
+The page will reload when you make changes.
