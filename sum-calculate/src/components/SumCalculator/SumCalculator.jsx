@@ -7,10 +7,14 @@ import styles from './SumCalculator.module.css';
  * Component SumCalculator: Chứa toàn bộ logic tính tổng.
  */
 export default function SumCalculator() {
-  // State của bạn (không thay đổi)
+  // State
+  // Giá trị nhập cho số thứ nhất
   const [number1, setNumber1] = useState('');
+  // Giá trị nhập cho số thứ hai
   const [number2, setNumber2] = useState('');
+  // Kết quả tổng (null khi chưa tính)
   const [sum, setSum] = useState(null);
+  // Thông báo lỗi sẽ hiển thị cho người dùng
   const [error, setError] = useState('');
 
   // Logic 
